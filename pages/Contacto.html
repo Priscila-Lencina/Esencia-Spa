@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Contacto | Esencia Spa</title>
+    <meta name="description" content="Reservá tu turno en Esencia Spa. Formulario de contacto, dirección, teléfono y horarios de atención.">
+    <meta name="keywords" content="contacto spa, reservar turno, direccion spa, horarios spa">
+ 
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+            <a href="../index.html" class="brand">Esencia Spa</a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+  <main>
+    <section class="page-hero">
+        <h1>Contacto</h1>
+        <p>Reservá tu turno o escribinos si tenés alguna consulta.</p>
+    </section>
+ 
+    <section class="page-content page-content--split">
+        <!--FORMULARIO -->
+        <form class="reservation-form" data-validate novalidate>
+            <h2>Reservá tu turno</h2>
+
+            <div class="form-group">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Elegí un servicio</option>
+                    <option value="masajes">Masajes</option>
+                    <option value="faciales">Faciales</option>
+                    <option value="corporales">Corporales</option>
+                    <option value="sauna">Sauna &amp; Circuito</option>
+                    <option value="promocion">Alguna promoción</option>
+                </select>
+            </div>
+ 
+            <div class="form-group">
+                <label for="fecha">Fecha tentativa</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+ 
+            <div class="form-group">
+                <label for="mensaje">Mensaje (opcional)</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar reserva</button>
+
+            <p class="form__status" role="status"></p>
+        </form>
+
+        <div class="contact-info">
+            <h2>Datos de contacto</h2>
+
+            <ul class="info-list">
+                <li><strong>Dirección:</strong> Av. Aconquija 1450, Yerba Buena, Tucumán</li>
+                <li><strong>Teléfono:</strong> +54 9 381 5636258</li>
+                <li><strong>Horarios:</strong> Lunes a viernes de 9:00 a 20:00, sábados de 9:00 a 14:00</li>
+            </ul>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2026 Esencia Spa</p>
+  </footer>
+  
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
